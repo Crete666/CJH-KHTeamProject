@@ -8,6 +8,10 @@
             - 근처 병원 검색
             - 팁 게시판
 
+임시 계정
+ - ID : abc456
+ - PW : abc456
+
 작성 내용
  1. Front-end
     - CJH-KHTeamProject\ForPets\src\main\webapp\WEB-INF\views\FindHospital
