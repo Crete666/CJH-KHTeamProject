@@ -73,6 +73,7 @@ public class WorkController {
 		return "myInfo/my_pet_work";
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="/Service/showPetWork")
 	public String showPetWork(WorkVO vo, WorkDAO workDAO, Model model,HttpSession session) {
 		System.out.println("=>show pet work start");

@@ -279,6 +279,7 @@ public class PetController{
 		return new ResponseEntity<String>("success", HttpStatus.OK);
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="getPet")
 	@ResponseBody
 	public void getPet(PetVO vo, PetDAO petDAO, HttpSession session, HttpServletRequest request) {
@@ -287,6 +288,7 @@ public class PetController{
 		System.out.println("---> getPet 완료");
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="getPetList")
 	public String getPetList(PetVO pvo, PetDAO petDAO, HttpSession session, Model model) {
 		System.out.println("---> getPetList 실행");
@@ -297,6 +299,7 @@ public class PetController{
 		return "./Service/getPetList";
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="findPetWork")
 	public String choicePetInfo(PetVO vo, PetDAO petDAO, HttpSession session,WorkVO voW, WorkDAO workDAO,Model model) {
 		System.out.println("===>pet get start");

@@ -114,7 +114,7 @@ public class ReserveController {
 	}
 	
 	
-	
+	// - 최지혁
 	@RequestMapping(value="/Service/choice")
 	public String choice(UserVO vo, HttpSession session) {
 		System.out.println("---> choice 실행");
@@ -123,6 +123,7 @@ public class ReserveController {
 		
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="/Service/normal")
 	public String normal(UserVO vo, HttpSession session) {
 		System.out.println("---> normal 실행");
@@ -137,6 +138,7 @@ public class ReserveController {
 		
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="/Service/work")
 	public String work(UserVO vo, HttpSession session) {
 		System.out.println("---> work 실행");
@@ -151,6 +153,7 @@ public class ReserveController {
 		
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="/Service/pickup")
 	public String pickup(UserVO vo, HttpSession session) {
 		System.out.println("---> pickup 실행");
@@ -165,6 +168,7 @@ public class ReserveController {
 		
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="/Service/reserve")
 	public String reserve(ReServeVO vo, ReserveDAO reserveDAO, HttpSession session, HttpServletRequest request) {
 		System.out.println("---> reserve 실행");
@@ -175,6 +179,7 @@ public class ReserveController {
 		return "Service/reserve";
 	}
 	
+	// - 최지혁
 	@RequestMapping(value="/Service/reserveInsert")
 	public String insertReserve(ReServeVO vo, PetVO pvo, Model model, HttpSession session) {
 		System.out.println("---> reserveInsert 실행");
@@ -199,6 +204,7 @@ public class ReserveController {
 		System.out.println("---> reserveInsert 완료");
 		return "Service/complete";
 	}
+	
 	
 	@RequestMapping(value="/partner/getReserve")
 	public String getReserveListPart(ReServeVO vo, ReserveDAO dao, Model model,HttpSession session){
